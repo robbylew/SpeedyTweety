@@ -5,7 +5,6 @@ A simple Python script to monitor your internet download speed and automatically
 ## Features
 
 - Monitor internet download speed in real-time.
-- Set custom speed threshold for alerts.
 - Automatic Twitter notification to the selected ISP.
 - Supported ISPs include AT&T, Comcast (Xfinity), Verizon, and more!
 
