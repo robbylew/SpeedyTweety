@@ -15,13 +15,14 @@ A simple Python script to monitor your internet download speed and automatically
 - Python environment with the following packages:
   - `tweepy`
   - `speedtest-cli`
+  - `configparser`
 
 ## Setup
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+git clone https://github.com/robbylew/SpeedyTweety.git
 ```
 
 2. Navigate to the repository:
@@ -33,7 +34,7 @@ cd YOUR_REPOSITORY_NAME
 3. Install the required Python libraries:
 
 ```bash
-pip install tweepy speedtest-cli
+pip install requirements.txt
 ```
 
 4. Set up your Twitter Developer API credentials. For security, consider using environment variables or an external configuration file to store these.
@@ -41,14 +42,14 @@ pip install tweepy speedtest-cli
 5. Run the script:
 
 ```bash
-python monitor_speed.py
+python src\main.py
 ```
 
 6. Follow the prompts to set your desired speed threshold and select your ISP.
 
 ## Usage
 
-Once you've set the threshold and selected your ISP, the script will monitor your internet download speed every 10 seconds. If the speed drops below the set threshold, it will notify you and send a tweet to the ISP's official Twitter handle about the speed drop.
+Once you've set the threshold and selected your ISP, the script will monitor your internet download speed every 20 seconds. If the speed drops below the set threshold, it will notify you and send a tweet to the ISP's official Twitter handle about the speed drop.
 
 ## Contributing
 

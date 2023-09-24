@@ -1,10 +1,15 @@
 import tweepy
 import configparser
+from pathlib import Path
 
 
 def setup_twitter():
     config = configparser.ConfigParser()
-    config.read('config.ini')
+
+    # Determine the path to the config.ini file which is one level up
+    config_path = Path(__file__).parent.parent / "config.ini"
+
+    config.read(config_path)
 
     api_key = config['Twitter']['API_KEY']
     api_secret_key = config['Twitter']['API_SECRET_KEY']
